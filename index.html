@@ -43,7 +43,7 @@
 <body>
 	<div id="gameContainer">
 		<canvas id="unity-canvas" data-pixel-art="false"></canvas>
-		<script src="Build/Interactive3D.loader.js"></script>
+		<script src="Build/Web3D.loader.js"></script>
 		<script>
 			var canvas = document.querySelector("#unity-canvas");
 			
@@ -52,9 +52,9 @@
 			canvas.height = canvas.clientHeight * window.devicePixelRatio * 10;
 
 			var config = {
-				dataUrl: "Build/Interactive3D.data",
-				frameworkUrl: "Build/Interactive3D.framework.js",
-				codeUrl: "Build/Interactive3D.wasm",
+				dataUrl: "Build/Web3D.data",
+				frameworkUrl: "Build/Web3D.framework.js",
+				codeUrl: "Build/Web3D.wasm",
 				streamingAssetsUrl: "StreamingAssets",
 				companyName: "MindPixels",
 				productName: "Interactive 3D",
